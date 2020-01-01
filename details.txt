@@ -13,5 +13,4 @@ rtmp {
         }
 }
 sudo systemctl restart nginx
-sudo gst-launch-1.0 v4l2src device=/dev/video1 ! video/x-raw,format=YUY2,width=640,height=480,framerate=25/1 ! videoconvert ! "video/x-raw, width=640, height=480, framerate=25/1" ! queue ! x264enc bitrate=2000 byte-stream=false key-int-max=60 bframes=0 aud=true tune=zerolatency ! "video/x-h264,profile=main" ! flvmux streamable=true name=mux ! rtmpsink location="rtmp://127.0.0.1:1935/live" audiotest
-src ! voaacenc bitrate=128000 ! mux.
+gst-launch-1.0 -vvv -e v4l2src device=/dev/video2 ! video/x-h264 ! h264parse  ! flvmux streamable=true name=mux         ! rtmpsink location="rtmp://192.168.86.66:1935/live"
