@@ -1,3 +1,4 @@
+sudo apt-get build-dep gstreamer1.0-plugins-bad
 sudo apt install nginx
 sudo apt install libnginx-mod-rtmp
 sudo nano /etc/nginx/nginx.conf
