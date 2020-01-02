@@ -1,3 +1,4 @@
+brew reinstall --build-from-source gst-plugins-base
 sudo apt-get build-dep gstreamer1.0-plugins-bad
 sudo apt install nginx
 sudo apt install libnginx-mod-rtmp
