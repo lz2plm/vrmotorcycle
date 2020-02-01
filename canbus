@@ -5,3 +5,5 @@ RPM: ['0x209', b'1bfc022a0900'] 1b * 100 + fc = 2700 + 253 RPM
 Gear: ['0x209', b'1bfc022a0600'] = 6th gear 
 
 Front Brak: [0x260,b'01Ff000000000000'] 1ff 100%
+
+A. Temp, C. Temp [0x23e,b'\x90\x70\x00\x00']  90 * 1.8 - 22, 70 * 1.8 - 22
