@@ -8,4 +8,8 @@ Front Brak: [0x260,b'0140000000000000'] y=5/16x,  0x0140 * 5 / 16 = 100%
 
 A. Temp, C. Temp [0x23e,b'\x90\x70\x00\x00']  y=9/8x-22, 0x70 * 9 / 8 - 22 = 104F
 
-T. Position [0x215,0014000070000a00] 02b602b750000a00 = 0014 min 02b8 100% 7 no throggle 5 throtle 
+T. Position [0x215,0014000070000a00] 02b602b750000a00 = 0014 min 02b8 100% [7] no throggle [5] throtle [f] clutch/neutral
+
+Angle [0x250,1b531a7f1f1c2008] 1a7 side stand, 1b2f1b5e1f342000 rear stand b5 = 180?? a7 = 167, so 180 - 167 = 13 degrees?
+
+1: pitch 2: roll 183 min 83 = 130, so 180 - 130 = 50 degrees? the 182f = 1830
